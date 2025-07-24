@@ -218,7 +218,7 @@ default_supplier_display = f"{flagged_supplier_id} - {flagged_supplier_name}"
 default_supplier_idx = supplier_options.index(default_supplier_display) if default_supplier_display in supplier_options else 0
 
 # Initialize chat history
-initialize_chat_history()
+initialize_chat_history(st.session_state)
 
 if not st.session_state["show_onboarding"]:
     # --- GitHub Lottie Animated Logo at True Top Right, above heading ---
@@ -396,7 +396,7 @@ if not st.session_state["show_onboarding"]:
                 
                 # Process the AI response
                 try:
-                    ai_response = process_user_question(last_user_message)
+                    ai_response = process_user_question(last_user_message, st.session_state)
                     
                     # Add AI response to chat history
                     st.session_state["chat_history"].append({"role": "assistant", "content": ai_response})
