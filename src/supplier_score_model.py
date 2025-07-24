@@ -3,8 +3,6 @@ import numpy as np
 from xgboost import XGBRegressor
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_squared_error
-
 
 def generate_supplier_score(
     overview_path: str,
@@ -12,68 +10,74 @@ def generate_supplier_score(
     master_data_path: str,
     output_path: str
 ) -> None:
-    # Load data
+    # Load all three datasets
     overview_df = pd.read_csv(overview_path)
-    financial_df_raw = pd.read_csv(financial_score_path)
-    required_cols = {"Supplier ID", "Quarter", "Financial Risk Score"}
-    missing_cols = required_cols - set(financial_df_raw.columns)
-    if missing_cols:
-        raise ValueError(f"Missing columns in financial_score_path: {missing_cols}")
-    financial_df = financial_df_raw[["Supplier ID", "Quarter", "Financial Risk Score"]]
+    financial_df = pd.read_csv(financial_score_path)
     master_df = pd.read_csv(master_data_path)
-
-    # Merge on both Supplier ID and Quarter to retain quarter info
-    df = overview_df.merge(financial_df, on=["Supplier ID"], how="left")
-    df = df.merge(master_df[["Supplier ID", "Tier"]], on=["Supplier ID"], how="left")
-
-    # Use Quarter from finacial_df
-    df["Quarter"] = df["Quarter"]
-
-    # Label encode Tier
-    df["Tier"] = LabelEncoder().fit_transform(df["Tier"].astype(str))
-
-    # Feature engineering: feature interactions
-    df["delay_defect_interaction"] = df["pct_defect_rate"] * df["%_delayed"]
-    df["delay_defect_interaction"] = df["pct_defect_rate"] * df["%_delayed"]
-    df["volume_delay_interaction"] = df["avg_shipment_volume"] * df["avg_delay"]
-    df["volume_lost_interaction"] = df["avg_shipment_volume"] * df["pct_shipment_lost"]
-    df["defect_lost_interaction"] = df["pct_defect_rate"] * df["pct_shipment_lost"]
-
-    # Optional: add log transform for skewed features
-    df["log_avg_delay"] = np.log1p(df["avg_delay"])
-    df["log_shipment_volume"] = np.log1p(df["avg_shipment_volume"])
-
-    # Define features and target
+    
+    # Clean up column names
+    overview_df.columns = overview_df.columns.str.strip()
+    financial_df.columns = financial_df.columns.str.strip()
+    master_df.columns = master_df.columns.str.strip()
+    
+    # Rename columns for standardization
+    overview_df.rename(columns={"Qtr": "Quarter", "quarter": "Quarter"}, inplace=True)
+    financial_df.rename(columns={"Qtr": "Quarter", "quarter": "Quarter"}, inplace=True)
+    
+    # Only keep relevant columns
+    overview_cols = ["Supplier ID", "Quarter", "%_on_time", "%_delayed", "avg_delay",
+                     "avg_shipment_volume", "%_shipment_lost", "%_defect_rate"]
+    financial_cols = ["Supplier ID", "Quarter", "Financial Risk Score"]
+    master_cols = ["Supplier ID", "Tier"]
+    overview_df = overview_df[overview_cols]
+    financial_df = financial_df[financial_cols]
+    master_df = master_df[master_cols]
+    
+    # Merge datasets on both Supplier ID and Quarter
+    merged_df = overview_df.merge(financial_df, on=["Supplier ID", "Quarter"], how="inner")
+    merged_df = merged_df.merge(master_df, on="Supplier ID", how="left")
+    
+    # Feature engineering
+    merged_df["Tier"] = LabelEncoder().fit_transform(merged_df["Tier"].astype(str))
+    merged_df["delay_defect_interaction"] = merged_df["%_defect_rate"] * merged_df["%_delayed"]
+    merged_df["volume_delay_interaction"] = merged_df["avg_shipment_volume"] * merged_df["avg_delay"]
+    merged_df["volume_lost_interaction"] = merged_df["avg_shipment_volume"] * merged_df["%_shipment_lost"]
+    merged_df["defect_lost_interaction"] = merged_df["%_defect_rate"] * merged_df["%_shipment_lost"]
+    merged_df["log_avg_delay"] = np.log1p(merged_df["avg_delay"])
+    merged_df["log_shipment_volume"] = np.log1p(merged_df["avg_shipment_volume"])
+    
+    # Features and dummy target
     feature_cols = [
         "%_on_time", "%_delayed", "avg_delay", "avg_shipment_volume",
-        "pct_shipment_lost", "pct_defect_rate", "Financial Risk Score", "Tier",
+        "%_shipment_lost", "%_defect_rate", "Financial Risk Score", "Tier",
         "delay_defect_interaction", "volume_delay_interaction",
         "volume_lost_interaction", "defect_lost_interaction",
         "log_avg_delay", "log_shipment_volume"
     ]
-
-    X = df[feature_cols]
-
-    # Dummy target for training (simulating supervised learning)
+    X = merged_df[feature_cols]
     y = (
-        0.3 * (100 - df["%_delayed"]) +
-        0.2 * (100 - df["avg_delay"]) +
-        0.2 * (100 - df["pct_shipment_lost"] * 100) +
-        0.1 * (100 - df["pct_defect_rate"] * 100) +
-        0.2 * (100 - df["Financial Risk Score"])
+        0.3 * (100 - merged_df["%_delayed"]) +
+        0.2 * (100 - merged_df["avg_delay"]) +
+        0.2 * (100 - merged_df["%_shipment_lost"]) +
+        0.1 * (100 - merged_df["%_defect_rate"]) +
+        0.2 * (100 - merged_df["Financial Risk Score"])
     )
-
+    
     # Normalize features
     scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
-
-    # Train model
+    
+    # Train/test split and model fitting
     X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
     model = XGBRegressor(random_state=42)
     model.fit(X_train, y_train)
-    # Predict and save
-    df["Supplier Score"] = model.predict(scaler.transform(X))
-    # Now include Quarter in the output
-    df[["Supplier ID", "Quarter", "Supplier Score"]].to_csv(output_path, index=False)
-
+    
+    # Predict scores for all data
+    merged_df["Supplier Score"] = model.predict(scaler.transform(X))
+    
+    # GROUP BY Supplier ID + Quarter, average if duplicates
+    result = merged_df.groupby(["Supplier ID", "Quarter"], as_index=False)["Supplier Score"].mean()
+    
+    # Save final dataset
+    result.to_csv(output_path, index=False)
     print(f"Supplier scores saved to {output_path}")

@@ -1,0 +1,1184 @@
+{
+  "filtered_supplier_deliveries": [
+    {
+      "Supplier ID": "SUP001",
+      "Order Date": "2020-07-30",
+      "Expected Delivery Date": "2020-08-07",
+      "Actual Delivery Date": "2020-08-08",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 84,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP001",
+      "Order Date": "2020-02-05",
+      "Expected Delivery Date": "2020-02-19",
+      "Actual Delivery Date": "2020-02-21",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 26,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP001",
+      "Order Date": "2021-09-23",
+      "Expected Delivery Date": "2021-10-01",
+      "Actual Delivery Date": "2021-09-25",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 100,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP001",
+      "Order Date": "2021-05-22",
+      "Expected Delivery Date": "2021-06-05",
+      "Actual Delivery Date": "2021-06-07",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 74,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP001",
+      "Order Date": "2021-04-14",
+      "Expected Delivery Date": "2021-04-19",
+      "Actual Delivery Date": "2021-04-17",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 112,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP001",
+      "Order Date": "2021-06-25",
+      "Expected Delivery Date": "2021-07-06",
+      "Actual Delivery Date": "2021-07-06",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 104,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP001",
+      "Order Date": "2022-06-05",
+      "Expected Delivery Date": "2022-06-20",
+      "Actual Delivery Date": "2022-06-27",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 131,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP001",
+      "Order Date": "2023-04-16",
+      "Expected Delivery Date": "2023-04-25",
+      "Actual Delivery Date": "2023-04-23",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 140,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP001",
+      "Order Date": "2021-06-24",
+      "Expected Delivery Date": "2021-07-08",
+      "Actual Delivery Date": "2021-07-06",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 48,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP001",
+      "Order Date": "2020-07-26",
+      "Expected Delivery Date": "2020-08-07",
+      "Actual Delivery Date": "2020-08-09",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 100,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP001",
+      "Order Date": "2020-10-26",
+      "Expected Delivery Date": "2020-10-31",
+      "Actual Delivery Date": "2020-11-03",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 115,
+      "Value Category": "Critical"
+    },
+    {
+      "Supplier ID": "SUP001",
+      "Order Date": "2022-03-16",
+      "Expected Delivery Date": "2022-03-28",
+      "Actual Delivery Date": "2022-04-08",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 115,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP001",
+      "Order Date": "2021-06-10",
+      "Expected Delivery Date": "2021-06-19",
+      "Actual Delivery Date": "2021-06-24",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 47,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP001",
+      "Order Date": "2020-08-27",
+      "Expected Delivery Date": "2020-09-07",
+      "Actual Delivery Date": "2020-09-03",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 113,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP002",
+      "Order Date": "2022-02-21",
+      "Expected Delivery Date": "2022-02-26",
+      "Actual Delivery Date": "2022-02-26",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 60,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP002",
+      "Order Date": "2022-12-13",
+      "Expected Delivery Date": "2022-12-24",
+      "Actual Delivery Date": "2022-12-21",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 74,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP002",
+      "Order Date": "2023-12-06",
+      "Expected Delivery Date": "2023-12-19",
+      "Actual Delivery Date": "2023-12-17",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 88,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP002",
+      "Order Date": "2020-04-06",
+      "Expected Delivery Date": "2020-04-19",
+      "Actual Delivery Date": "2020-04-24",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 153,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP002",
+      "Order Date": "2021-06-03",
+      "Expected Delivery Date": "2021-06-12",
+      "Actual Delivery Date": "2021-06-05",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 90,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP002",
+      "Order Date": "2022-07-29",
+      "Expected Delivery Date": "2022-08-07",
+      "Actual Delivery Date": "2022-08-09",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 89,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP002",
+      "Order Date": "2021-05-30",
+      "Expected Delivery Date": "2021-06-10",
+      "Actual Delivery Date": "2021-06-13",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 53,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP002",
+      "Order Date": "2023-04-17",
+      "Expected Delivery Date": "2023-04-29",
+      "Actual Delivery Date": "2023-05-02",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 96,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP002",
+      "Order Date": "2023-02-08",
+      "Expected Delivery Date": "2023-02-18",
+      "Actual Delivery Date": "2023-02-19",
+      "Shipment Lost": true,
+      "Defected": true,
+      "Shipment Volume": 70,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP002",
+      "Order Date": "2021-07-10",
+      "Expected Delivery Date": "2021-07-15",
+      "Actual Delivery Date": "2021-07-13",
+      "Shipment Lost": true,
+      "Defected": false,
+      "Shipment Volume": 68,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP002",
+      "Order Date": "2023-01-15",
+      "Expected Delivery Date": "2023-01-22",
+      "Actual Delivery Date": "2023-01-22",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 122,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP002",
+      "Order Date": "2022-05-28",
+      "Expected Delivery Date": "2022-06-11",
+      "Actual Delivery Date": "2022-06-13",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 85,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP002",
+      "Order Date": "2023-07-19",
+      "Expected Delivery Date": "2023-07-29",
+      "Actual Delivery Date": "2023-07-29",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 84,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP002",
+      "Order Date": "2020-07-22",
+      "Expected Delivery Date": "2020-08-03",
+      "Actual Delivery Date": "2020-08-02",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 115,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP003",
+      "Order Date": "2021-08-23",
+      "Expected Delivery Date": "2021-08-28",
+      "Actual Delivery Date": "2021-08-28",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 125,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP003",
+      "Order Date": "2020-05-17",
+      "Expected Delivery Date": "2020-05-28",
+      "Actual Delivery Date": "2020-05-28",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 114,
+      "Value Category": "Critical"
+    },
+    {
+      "Supplier ID": "SUP003",
+      "Order Date": "2020-04-09",
+      "Expected Delivery Date": "2020-04-22",
+      "Actual Delivery Date": "2020-04-23",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 65,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP003",
+      "Order Date": "2021-08-27",
+      "Expected Delivery Date": "2021-09-01",
+      "Actual Delivery Date": "2021-09-05",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 92,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP003",
+      "Order Date": "2020-08-07",
+      "Expected Delivery Date": "2020-08-20",
+      "Actual Delivery Date": "2020-08-20",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 133,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP003",
+      "Order Date": "2022-09-08",
+      "Expected Delivery Date": "2022-09-20",
+      "Actual Delivery Date": "2022-09-17",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 66,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP003",
+      "Order Date": "2023-08-01",
+      "Expected Delivery Date": "2023-08-13",
+      "Actual Delivery Date": "2023-08-10",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 89,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP003",
+      "Order Date": "2023-12-14",
+      "Expected Delivery Date": "2023-12-19",
+      "Actual Delivery Date": "2023-12-19",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 119,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP003",
+      "Order Date": "2021-10-07",
+      "Expected Delivery Date": "2021-10-16",
+      "Actual Delivery Date": "2021-10-05",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 62,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP003",
+      "Order Date": "2023-05-11",
+      "Expected Delivery Date": "2023-05-17",
+      "Actual Delivery Date": "2023-05-18",
+      "Shipment Lost": true,
+      "Defected": false,
+      "Shipment Volume": 91,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP003",
+      "Order Date": "2023-06-24",
+      "Expected Delivery Date": "2023-07-07",
+      "Actual Delivery Date": "2023-07-15",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 140,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP003",
+      "Order Date": "2022-10-25",
+      "Expected Delivery Date": "2022-11-04",
+      "Actual Delivery Date": "2022-11-05",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 91,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP003",
+      "Order Date": "2022-08-25",
+      "Expected Delivery Date": "2022-09-03",
+      "Actual Delivery Date": "2022-09-03",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 103,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP003",
+      "Order Date": "2021-12-10",
+      "Expected Delivery Date": "2021-12-17",
+      "Actual Delivery Date": "2021-12-21",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 115,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP003",
+      "Order Date": "2020-10-01",
+      "Expected Delivery Date": "2020-10-15",
+      "Actual Delivery Date": "2020-10-17",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 52,
+      "Value Category": "Critical"
+    },
+    {
+      "Supplier ID": "SUP003",
+      "Order Date": "2020-11-28",
+      "Expected Delivery Date": "2020-12-03",
+      "Actual Delivery Date": "2020-12-03",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 51,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP004",
+      "Order Date": "2020-08-28",
+      "Expected Delivery Date": "2020-09-02",
+      "Actual Delivery Date": "2020-09-07",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 80,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP004",
+      "Order Date": "2022-02-05",
+      "Expected Delivery Date": "2022-02-18",
+      "Actual Delivery Date": "2022-02-13",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 137,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP004",
+      "Order Date": "2020-12-10",
+      "Expected Delivery Date": "2020-12-17",
+      "Actual Delivery Date": "2020-12-08",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 107,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP004",
+      "Order Date": "2020-09-14",
+      "Expected Delivery Date": "2020-09-26",
+      "Actual Delivery Date": "2020-09-24",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 93,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP004",
+      "Order Date": "2022-07-21",
+      "Expected Delivery Date": "2022-07-29",
+      "Actual Delivery Date": "2022-07-31",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 78,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP004",
+      "Order Date": "2023-02-19",
+      "Expected Delivery Date": "2023-02-25",
+      "Actual Delivery Date": "2023-02-26",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 122,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP004",
+      "Order Date": "2023-02-09",
+      "Expected Delivery Date": "2023-02-14",
+      "Actual Delivery Date": "2023-02-06",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 131,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP004",
+      "Order Date": "2020-05-27",
+      "Expected Delivery Date": "2020-06-02",
+      "Actual Delivery Date": "2020-06-10",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 102,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP004",
+      "Order Date": "2023-06-30",
+      "Expected Delivery Date": "2023-07-09",
+      "Actual Delivery Date": "2023-07-10",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 111,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP004",
+      "Order Date": "2022-08-22",
+      "Expected Delivery Date": "2022-09-03",
+      "Actual Delivery Date": "2022-09-02",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 91,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP004",
+      "Order Date": "2023-02-22",
+      "Expected Delivery Date": "2023-02-28",
+      "Actual Delivery Date": "2023-02-26",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 92,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP004",
+      "Order Date": "2020-02-05",
+      "Expected Delivery Date": "2020-02-12",
+      "Actual Delivery Date": "2020-02-05",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 134,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP004",
+      "Order Date": "2022-02-21",
+      "Expected Delivery Date": "2022-03-02",
+      "Actual Delivery Date": "2022-02-25",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 120,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP004",
+      "Order Date": "2023-12-15",
+      "Expected Delivery Date": "2023-12-23",
+      "Actual Delivery Date": "2023-12-27",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 100,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP004",
+      "Order Date": "2022-06-30",
+      "Expected Delivery Date": "2022-07-05",
+      "Actual Delivery Date": "2022-06-30",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 121,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP004",
+      "Order Date": "2021-01-20",
+      "Expected Delivery Date": "2021-01-27",
+      "Actual Delivery Date": "2021-01-24",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 111,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2020-05-03",
+      "Expected Delivery Date": "2020-05-17",
+      "Actual Delivery Date": "2020-05-20",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 115,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2020-10-19",
+      "Expected Delivery Date": "2020-10-24",
+      "Actual Delivery Date": "2020-10-27",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 71,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2022-01-10",
+      "Expected Delivery Date": "2022-01-15",
+      "Actual Delivery Date": "2022-01-15",
+      "Shipment Lost": true,
+      "Defected": false,
+      "Shipment Volume": 52,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2023-01-31",
+      "Expected Delivery Date": "2023-02-10",
+      "Actual Delivery Date": "2023-02-12",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 110,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2020-10-28",
+      "Expected Delivery Date": "2020-11-08",
+      "Actual Delivery Date": "2020-11-12",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 63,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2022-03-23",
+      "Expected Delivery Date": "2022-04-02",
+      "Actual Delivery Date": "2022-04-06",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 122,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2020-11-12",
+      "Expected Delivery Date": "2020-11-19",
+      "Actual Delivery Date": "2020-11-21",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 89,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2020-10-17",
+      "Expected Delivery Date": "2020-10-29",
+      "Actual Delivery Date": "2020-10-30",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 116,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2023-09-13",
+      "Expected Delivery Date": "2023-09-28",
+      "Actual Delivery Date": "2023-09-30",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 94,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2021-08-06",
+      "Expected Delivery Date": "2021-08-15",
+      "Actual Delivery Date": "2021-08-23",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 116,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2023-09-20",
+      "Expected Delivery Date": "2023-09-30",
+      "Actual Delivery Date": "2023-10-01",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 122,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2022-05-09",
+      "Expected Delivery Date": "2022-05-24",
+      "Actual Delivery Date": "2022-05-25",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 134,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2022-09-14",
+      "Expected Delivery Date": "2022-09-28",
+      "Actual Delivery Date": "2022-09-27",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 85,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2021-12-26",
+      "Expected Delivery Date": "2022-01-07",
+      "Actual Delivery Date": "2022-01-08",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 72,
+      "Value Category": "Critical"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2022-12-30",
+      "Expected Delivery Date": "2023-01-04",
+      "Actual Delivery Date": "2023-01-07",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 77,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2021-03-03",
+      "Expected Delivery Date": "2021-03-17",
+      "Actual Delivery Date": "2021-03-10",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 108,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2022-04-05",
+      "Expected Delivery Date": "2022-04-18",
+      "Actual Delivery Date": "2022-04-20",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 58,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2022-01-06",
+      "Expected Delivery Date": "2022-01-13",
+      "Actual Delivery Date": "2022-01-10",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 85,
+      "Value Category": "Critical"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2020-12-09",
+      "Expected Delivery Date": "2020-12-18",
+      "Actual Delivery Date": "2020-12-20",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 67,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2023-08-17",
+      "Expected Delivery Date": "2023-08-31",
+      "Actual Delivery Date": "2023-08-31",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 116,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2020-12-03",
+      "Expected Delivery Date": "2020-12-15",
+      "Actual Delivery Date": "2020-12-17",
+      "Shipment Lost": true,
+      "Defected": false,
+      "Shipment Volume": 78,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2022-11-17",
+      "Expected Delivery Date": "2022-11-29",
+      "Actual Delivery Date": "2022-12-01",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 60,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2020-01-18",
+      "Expected Delivery Date": "2020-01-23",
+      "Actual Delivery Date": "2020-01-25",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 200,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2023-08-17",
+      "Expected Delivery Date": "2023-08-27",
+      "Actual Delivery Date": "2023-09-02",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 71,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2020-03-08",
+      "Expected Delivery Date": "2020-03-21",
+      "Actual Delivery Date": "2020-03-23",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 110,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2023-01-22",
+      "Expected Delivery Date": "2023-02-03",
+      "Actual Delivery Date": "2023-01-31",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 48,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2023-07-12",
+      "Expected Delivery Date": "2023-07-24",
+      "Actual Delivery Date": "2023-07-20",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 110,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2022-05-17",
+      "Expected Delivery Date": "2022-05-22",
+      "Actual Delivery Date": "2022-05-23",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 80,
+      "Value Category": "Critical"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2023-08-09",
+      "Expected Delivery Date": "2023-08-18",
+      "Actual Delivery Date": "2023-08-15",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 148,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2023-05-24",
+      "Expected Delivery Date": "2023-05-29",
+      "Actual Delivery Date": "2023-05-30",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 93,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2020-06-24",
+      "Expected Delivery Date": "2020-07-06",
+      "Actual Delivery Date": "2020-07-06",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 126,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2023-05-05",
+      "Expected Delivery Date": "2023-05-15",
+      "Actual Delivery Date": "2023-05-16",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 51,
+      "Value Category": "Critical"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2023-01-09",
+      "Expected Delivery Date": "2023-01-22",
+      "Actual Delivery Date": "2023-01-24",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 63,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2023-10-04",
+      "Expected Delivery Date": "2023-10-12",
+      "Actual Delivery Date": "2023-10-13",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 114,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2023-04-30",
+      "Expected Delivery Date": "2023-05-07",
+      "Actual Delivery Date": "2023-05-09",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 109,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2020-07-12",
+      "Expected Delivery Date": "2020-07-23",
+      "Actual Delivery Date": "2020-07-29",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 66,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2023-09-27",
+      "Expected Delivery Date": "2023-10-02",
+      "Actual Delivery Date": "2023-10-24",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 119,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2022-07-22",
+      "Expected Delivery Date": "2022-08-05",
+      "Actual Delivery Date": "2022-08-09",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 58,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2021-01-02",
+      "Expected Delivery Date": "2021-01-14",
+      "Actual Delivery Date": "2021-01-15",
+      "Shipment Lost": true,
+      "Defected": false,
+      "Shipment Volume": 47,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2023-04-10",
+      "Expected Delivery Date": "2023-04-23",
+      "Actual Delivery Date": "2023-04-30",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 100,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP005",
+      "Order Date": "2021-05-07",
+      "Expected Delivery Date": "2021-05-22",
+      "Actual Delivery Date": "2021-05-21",
+      "Shipment Lost": true,
+      "Defected": false,
+      "Shipment Volume": 146,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP006",
+      "Order Date": "2023-06-23",
+      "Expected Delivery Date": "2023-06-28",
+      "Actual Delivery Date": "2023-06-21",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 133,
+      "Value Category": "Critical"
+    },
+    {
+      "Supplier ID": "SUP006",
+      "Order Date": "2020-02-11",
+      "Expected Delivery Date": "2020-02-16",
+      "Actual Delivery Date": "2020-02-20",
+      "Shipment Lost": true,
+      "Defected": false,
+      "Shipment Volume": 129,
+      "Value Category": "High"
+    },
+    {
+      "Supplier ID": "SUP006",
+      "Order Date": "2022-11-06",
+      "Expected Delivery Date": "2022-11-13",
+      "Actual Delivery Date": "2022-11-13",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 69,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP006",
+      "Order Date": "2020-12-22",
+      "Expected Delivery Date": "2020-12-27",
+      "Actual Delivery Date": "2021-01-02",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 132,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP006",
+      "Order Date": "2020-11-22",
+      "Expected Delivery Date": "2020-11-28",
+      "Actual Delivery Date": "2020-11-29",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 155,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP006",
+      "Order Date": "2021-11-02",
+      "Expected Delivery Date": "2021-11-11",
+      "Actual Delivery Date": "2021-11-12",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 68,
+      "Value Category": "Critical"
+    },
+    {
+      "Supplier ID": "SUP006",
+      "Order Date": "2022-08-19",
+      "Expected Delivery Date": "2022-08-28",
+      "Actual Delivery Date": "2022-08-28",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 63,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP006",
+      "Order Date": "2020-02-20",
+      "Expected Delivery Date": "2020-02-25",
+      "Actual Delivery Date": "2020-02-25",
+      "Shipment Lost": true,
+      "Defected": false,
+      "Shipment Volume": 96,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP006",
+      "Order Date": "2022-09-13",
+      "Expected Delivery Date": "2022-09-22",
+      "Actual Delivery Date": "2022-09-19",
+      "Shipment Lost": true,
+      "Defected": false,
+      "Shipment Volume": 148,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP006",
+      "Order Date": "2021-03-07",
+      "Expected Delivery Date": "2021-03-19",
+      "Actual Delivery Date": "2021-03-20",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 117,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP006",
+      "Order Date": "2020-10-02",
+      "Expected Delivery Date": "2020-10-09",
+      "Actual Delivery Date": "2020-10-16",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 128,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP006",
+      "Order Date": "2021-04-04",
+      "Expected Delivery Date": "2021-04-10",
+      "Actual Delivery Date": "2021-04-12",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 101,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP006",
+      "Order Date": "2021-04-05",
+      "Expected Delivery Date": "2021-04-13",
+      "Actual Delivery Date": "2021-04-13",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 78,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP006",
+      "Order Date": "2023-05-18",
+      "Expected Delivery Date": "2023-05-25",
+      "Actual Delivery Date": "2023-05-15",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 137,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP006",
+      "Order Date": "2020-06-26",
+      "Expected Delivery Date": "2020-07-02",
+      "Actual Delivery Date": "2020-07-07",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 108,
+      "Value Category": "Low"
+    },
+    {
+      "Supplier ID": "SUP006",
+      "Order Date": "2023-05-06",
+      "Expected Delivery Date": "2023-05-14",
+      "Actual Delivery Date": "2023-05-11",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 45,
+      "Value Category": "Medium"
+    },
+    {
+      "Supplier ID": "SUP006",
+      "Order Date": "2022-05-23",
+      "Expected Delivery Date": "2022-06-06",
+      "Actual Delivery Date": "2022-06-10",
+      "Shipment Lost": false,
+      "Defected": true,
+      "Shipment Volume": 128,
+      "Value Category": "Low"
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "ML_financial": {
+    "description": "Quarterly financial metrics for each supplier, including credit score, revenue, and D&B rating.",
+    "columns": [
+      "Supplier ID",
+      "Quarter",
+      "Credit Score",
+      "Revenue (USD)",
+      "D&B Rating"
+    ],
+    "source": "2.supplier_financials_dataset.csv",
+    "ml_model": {
+      "name": "Isolation Forest",
+      "type": "Unsupervised anomaly detection",
+      "library": "scikit-learn",
+      "purpose": "Calculate financial risk scores for suppliers based on anomaly detection in their financial data.",
+      "parameters": {
+        "contamination": 0.1,
+        "random_state": 42
+      },
+      "features_used": [
+        "Credit Score",
+        "Revenue (USD)",
+        "D&B Rating"
+      ],
+      "output": "Financial Risk Score (0-100), higher means higher anomaly risk",
+      "why_this_model": "Isolation Forest is well-suited for identifying anomalies in high-dimensional, unlabeled data such as supplier financial metrics. It efficiently detects outliers without requiring labeled examples of risky suppliers, making it ideal for unsupervised financial risk detection in this context."
+    }
+  },
+
+  "ML_Supplier_score": {
+    "description": "Calculates a comprehensive supplier performance score each quarter by combining operational performance data, financial risk, and supplier tier using a supervised machine learning approach.",
+    "columns": [
+      "Supplier ID",
+      "Quarter",
+      "%_on_time",
+      "%_delayed",
+      "avg_delay",
+      "avg_shipment_volume",
+      "%_shipment_lost",
+      "%_defect_rate",
+      "Financial Risk Score",
+      "Tier",
+      "delay_defect_interaction",
+      "volume_delay_interaction",
+      "volume_lost_interaction",
+      "defect_lost_interaction",
+      "log_avg_delay",
+      "log_shipment_volume",
+      "Supplier Score"
+    ],
+    "sources": {
+      "overview_data": "overview_path (CSV with operational KPIs per supplier per quarter)",
+      "financial_risk": "financial_score_path (CSV with financial risk scores)",
+      "supplier_master": "master_data_path (CSV with Supplier ID and Tier)"
+    },
+    "ml_model": {
+      "name": "XGBRegressor",
+      "type": "Supervised regression",
+      "library": "xgboost",
+      "purpose": "To predict an overall supplier score based on a mix of operational, financial, and categorical supplier features.",
+      "parameters": {
+        "random_state": 42
+      },
+      "features_used": [
+        "%_on_time",
+        "%_delayed",
+        "avg_delay",
+        "avg_shipment_volume",
+        "%_shipment_lost",
+        "%_defect_rate",
+        "Financial Risk Score",
+        "Tier",
+        "delay_defect_interaction",
+        "volume_delay_interaction",
+        "volume_lost_interaction",
+        "defect_lost_interaction",
+        "log_avg_delay",
+        "log_shipment_volume"
+      ],
+      "why_this_model": "XGBoost (XGBRegressor) was chosen for its high performance, ability to handle both linear and non-linear relationships, support for feature interactions, and robustness with tabular data. It also provides built-in handling of missing values and is widely used for structured regression tasks.",
+      "training": {
+        "train_test_split": "80% train, 20% test",
+        "scaling": "StandardScaler used for feature normalization"
+      }
+    },
+    "output": {
+      "file": "output_path (CSV)",
+      "columns": ["Supplier ID", "Quarter", "Supplier Score"],
+      "description": "Each row gives the predicted supplier performance score for a supplier in a specific quarter, averaged if there are duplicates."
+    }
+  },
+
+  "supplier_master_data": {
+    "SUP001": {
+      "Supplier ID": "SUP001",
+      "Supplier Name": "Nortech Electronics",
+      "Region": "North America",
+      "Tier": "Tier 1"
+    },
+    "SUP002": {
+      "Supplier ID": "SUP002",
+      "Supplier Name": "EuroAuto Parts",
+      "Region": "Europe",
+      "Tier": "Tier 2"
+    },
+    "SUP003":{
+      "Supplier ID": "SUP003",
+      "Supplier Name": "AsiaText Co",
+      "Region": "Asia",
+      "Tier": "Tier 1"
+    },
+    "SUP004": {
+      "Supplier ID": "SUP004",
+      "Supplier Name": "ChemSouth Ltd",
+      "Region": "South America",
+      "Tier": "Tier 3"
+    },
+    "SUP005": {
+      "Supplier ID": "SUP005",
+      "Supplier Name": "AfriMine Corp",
+      "Region": "Africa",
+      "Tier": "Tier 2"
+    },
+    "SUP006": {
+      "Supplier ID": "SUP006",
+      "Supplier Name": "GlobalMed Supply",
+      "Region": "Global",
+      "Tier": "Tier 1"
+    }
+},
+
+  "average_supplier_score_2020_2023": {
+    "SUP001": 84.33,
+    "SUP002": 77.456,
+    "SUP003": 83.75,
+    "SUP004": 81.93,
+    "SUP005": 75.0,
+    "SUP006": 83.19
+  },
+
+  "Flagged_suppliers": {
+    "suppliers flagged": "SUP003, SUP005",
+    "SUP003_Flagged_quarters": "AsiaText Co (Flagged in 2021-Q3)",
+    "SUP005_Flagged_quarters": "AfriMine Corp (Flagged in 2021-Q4, 2023-Q2)"
+  },
+
+  
+  "charts": [
+    {
+      "title": "Average Supplier Score",
+      "type": "Bar Chart",
+      "description": "Displays the average risk score for each supplier, highlighting those with risk scores above the threshold.",
+      "x_axis": "Supplier ID",
+      "y_axis": "Supplier Score",
+      "filters": ["Value Category", "Date Range"],
+      "highlighted": "Flagged suppliers",
+      "source_data": "Supplier_score_final"
+    },
+    {
+      "title": "Total Shipment Volume per supplier",
+      "type": "Bar Chart",
+      "description": "Displays the total shipment volume for each supplier as per the date range and value category selected.",
+      "x_axis": "Supplier ID",
+      "y_axis": "Total Shipment Volume",
+      "filters": ["Value Category", "Date Range"],
+      "source_data": "supplier_delivery_dataset"
+    },
+    {
+      "title": "Expected vs Actual Deliveries",
+      "type": "Multi-Series Line Chart with Event Markers",
+      "description": "Shows expected shipment deliveries versus actual deliveries over time for the selected supplier. Blue dashed line and dots represent the expected shipment dates and volumes, while the green solid line and squares show the actual shipment deliveries. The chart also highlights defected shipments (brown triangles) and lost shipments (purple X markers). Used to analyze delivery performance, spot delays, and investigate loss or defect trends over time.",
+      "x_axis": "Date",
+      "y_axis": "Shipment Volume",
+      "series": [
+        {"name": "Expected Delivery", "style": "blue dashed line + circle markers"},
+        {"name": "Actual Delivery", "style": "green solid line + square markers"},
+        {"name": "Defected", "style": "brown triangle-up markers on actual delivery"},
+        {"name": "Shipment Lost", "style": "purple X markers on expected delivery"}
+      ],
+      "filters": ["Value Category", "Supplier", "Date Range", "Aggregation (Per Shipment, Per Week, Per Month)"],
+      "aggregation_options": ["Per Shipment", "Per Week", "Per Month"],
+      "highlighted_events": ["Defected Shipments", "Lost Shipments"],
+      "source_data": "supplier_delivery_dataset.csv",
+      "purpose": "To visualize the delivery performance for a supplier by comparing planned (expected) and actual shipment volumes over time, while highlighting defected and lost shipments for root cause analysis and risk assessment."
+    },
+    {
+      "title": "Supplier Overview",
+      "type": "Table",
+      "description": "Displays summary delivery performance metrics for the selected supplier, broken down by Value Category (Critical, High, Medium, Low). Metrics include on-time and delayed shipment percentages, average delivery delay, average shipment volume, percent of shipments lost, and percent of shipments with defects. Useful for quickly comparing supplier reliability and quality across shipment types.",
+      "columns": [
+        "Supplier ID",
+        "Supplier Name",
+        "Value Category",
+        "%_on_time",
+        "%_delayed",
+        "avg_delay",
+        "avg_shipment_volume",
+        "%_shipment_lost",
+        "%_defect_rate"
+      ],
+      "filters": ["Value Category", "Supplier"],
+      "source_data": "supplier_delivery_table.csv (derived from supplier_delivery_dataset.csv)",
+      "purpose": "To provide a detailed breakdown of each supplier’s delivery performance across different value categories, helping users assess reliability, delays, shipment volume, loss, and defects at a glance."
+    }
+  ],
+
+  "llm_model": {
+    "name": "Devstral-Small-2507",
+    "provider": "Mistral AI via Hugging Face Hub",
+    "model_id": "mistralai/Devstral-Small-2507",
+    "purpose": "Natural language question answering, explanation, and user assistance for the Supplier Performance dashboard.",
+    "why_this_model": "Devstral-Small-2507 was selected for its strong conversational abilities, open weights, and cost-effective inference for dashboard AI assistants.",
+    "api_client": "huggingface_hub.InferenceClient",
+    "temperature": 0.6,
+    "max_new_tokens": 200,
+    "limitations": [
+      "context understanding is limited due to token limitation offered on free tier Hugging face",
+      "Does not have access to external data or internet."
+    ]
+  }
+}
